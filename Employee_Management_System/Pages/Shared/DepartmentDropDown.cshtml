@@ -1,0 +1,14 @@
+﻿@page
+@model Employee_Management_System.Pages.Shared.DepartmentDropDownModel
+@{
+    <select asp-for="@Model" asp-items='new List<SelectListItem>
+{
+    new SelectListItem { Text = "Create", Value = "Create" },
+    new SelectListItem { Text = "Delete", Value = "Delete" },
+    new SelectListItem { Text = "Details", Value = "Details" },
+    new SelectListItem { Text = "Edit", Value = "Edit" },
+    new SelectListItem { Text = "Index", Value = "Index" }
+}' class="form-control"></select>
+
+
+}
